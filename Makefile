@@ -5,6 +5,6 @@ frontend:
 backend:
 	npm run server
 start:
-	make server & make dev
+	make backend & make frontend
 build:
 	npm build
