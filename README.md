@@ -17,6 +17,6 @@ ___
 
 ```$make install``` - установка зависимостей
 
-```$make start``` - запуск json-server и frontend
+```$make start``` - запуск json-server и frontend. После запуска нужно открыть __http://localhost:3000__
 
 ```$make build``` - билд приложения
