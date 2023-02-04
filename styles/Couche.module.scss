@@ -1,0 +1,67 @@
+@import './variables.module.scss';
+
+.couche {
+    width: 400px;
+    height: 500px;
+
+    &__inner {
+        margin: 5px 0;
+    }
+
+    &__img {
+        max-width: 100%;
+        height: 200px;
+        background-color: $grey;
+        margin-bottom: 1rem;
+    }
+
+    &__info>div {
+        margin-top: 10px;
+    }
+
+    &__button {
+        padding: 5px 10px;
+        background-color: $button-red;
+        color: $primary;
+        border: none;
+        border-radius: 0.2rem;
+    }
+
+    &__button:hover {
+        background-color: $button-green;
+        cursor: pointer;
+    }
+
+    &__price {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__fullprice {
+        font-size: 15px;
+        color: $dark-grey;
+        text-decoration: line-through;
+        margin: 0 3rem;
+    }
+
+    &__discount {
+        position: relative;
+        font-size: 15px;
+        padding: 5px;
+        font-weight: 600;
+        border: 1.4px solid $dark-grey;
+        border-left: none;
+        border-radius: 2px;
+    }
+
+    &__discount::after {
+        content: " ";
+        position: absolute;
+        left: -14px;
+        top: -1px;
+        border-top: 15px solid transparent;
+        border-right: 15px solid $dark-grey;
+        border-left: none;
+        border-bottom: 15px solid transparent;
+    }
+}

@@ -1,0 +1,12 @@
+@import './variables.module.scss';
+
+.couches {
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 10px;
+}

@@ -1,0 +1,88 @@
+@import './variables.module.scss';
+
+.details {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    max-width: $max-width;
+    margin: auto;
+
+    &__img {
+        height: 100%;
+        max-width: 800px;
+    }
+
+    &__container {
+        width: 100%;
+        height: calc(100vh - 40%);
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    &__carousel {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+}
+
+.info {
+    height: 100%;
+    flex-grow: 1;
+
+    &__name {
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    &__price {
+        color: $price;
+        font-size: 30px;
+    }
+
+    &__ratingCount {
+        font-size: 15px;
+        margin-left: 20px;
+        color: $dark-grey;
+        text-decoration: underline;
+    }
+
+    &__colors {
+        justify-content: space-between;
+    }
+
+    &__choice {
+        margin-top: 40px;
+    }
+
+    &__filling {
+        justify-content: space-between;
+    }
+
+    &__footer {
+        width: 300px;
+        color: $dark-grey;
+    }
+
+    &__button {
+        padding: 10px;
+        width: 100%;
+        border: none;
+        background-color: $btn-primary;
+        color: $primary;
+        border-radius: 2px;
+        margin-top: 25px;
+    }
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.filling {
+    padding: 5px 15px;
+    border: 1px solid $dark-grey;
+}
